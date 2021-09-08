@@ -1,3 +1,4 @@
+import MainSection from "./components/MainSection";
 import Sidebar from "./components/Sidebar";
 
 
@@ -11,6 +12,7 @@ function App() {
       </div>
       <div>
         {/* main section */}
+        <MainSection/>
       </div>
       <div>
         {/* left setion */}
