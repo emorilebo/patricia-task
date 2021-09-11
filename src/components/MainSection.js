@@ -8,20 +8,18 @@ function MainSection() {
     <div>
       <Header />
       <div className="flex items-center">
-        <PhotographIcon className="h-10 rounded-md text-green-900 m-6 bg-green-100 p-3" />
+        <PhotographIcon className="h-10 rounded-md text-green-900 m-6 bg-green-100 p-3 cursor-pointer" />
         
-        <div className="flex items-center">
+        <div className="flex justify-between w-full items-center cursor-pointer">
           <div>
               <div className="flex align-centre">
-              <h1 className="text-xl text-black font-semibold">Virtual Card</h1>
-              <ArrowCircleDownIcon className="h-4 w-4 mt-2 ml-2 text-gray-400" />
+              <h1 className="text-xl text-black font-semibold hover:text-green-800">Virtual Card</h1>
+              <ArrowCircleDownIcon className="h-4 w-4 mt-2 ml-2 text-gray-400 hover:text-gray-300" />
               </div>
               <p className="text-gray-400">Lorem Ipsum dolar sit amet</p>
           </div>
-          <div className="p-10 mx-12">
-
-          </div>
-          <button className="text-black-700 ml-12  bg-yellow-400 hover:bg-yellow-500 px-6 py-2 rounded-xl">
+          
+          <button className="text-black-700 mr-8  bg-yellow-400 hover:bg-yellow-500 px-6 py-2 rounded-xl">
             Create New Card
           </button>
         </div>
@@ -29,24 +27,24 @@ function MainSection() {
       <div className="flex">
         <img
           src="/card.png"
-          className="ml-5 mt-6 mb-6 cursor-pointer"
+          className="ml-4 mb-10 cursor-pointer"
           alt="atmcard"
         />
         <img
           src="/blur.png"
-          className="mt-5 p-4 pl-5 ml-5 mb-10 cursor-pointer"
+          className="mt-1 p-3 pl-5 ml-4 mb-10 cursor-pointer"
           alt="blur card"
         />
       </div>
-      <div className="mt">
-        <button className="text-green-900  ml-5 border-green-800 border-2 px-6 py-2 rounded-xl">
+      <div className="-mt-6">
+        <button className="text-green-900  ml-5 border-green-800 hover:bg-green-700 hover:text-white border-2 px-6 py-2 rounded-xl">
           Freeze Card
         </button>
-        <button className="text-red-700 mb-6 ml-10 border-red-800 bg-tranparent-400 border-2 px-6 py-2 rounded-xl">
+        <button className="text-red-700 hover:bg-red-700 hover:text-white  mb-6 ml-10 border-red-800 bg-tranparent-400 border-2 px-6 py-2 rounded-xl">
           Delete Card
         </button>
       </div>
-      <div className="ml-4">
+      <div className="">
       
         <CardDetails
             cardBalance="$3000.73"

@@ -1,45 +1,84 @@
-import { BellIcon, CalendarIcon, DotsVerticalIcon, SaveIcon } from "@heroicons/react/solid";
 import React from "react";
-import Avatar from "@material-ui/core/Avatar";
+import Activity from "./Activity";
+import ActivityHeading from "./ActivityHeading";
+import WidgetHeader from "./WidgetHeader";
 
-// const activities = [
-//   { src: "/amazon.png", name: "Amazon", date: "Just now", price: "$377.23" },
-//   {
-//     src: "/domeremember-profile.jpg",
-//     name: "Amazon",
-//     date: "Just now",
-//     price: "$377.23",
-//   },
-//   {
-//     src: "/domeremember-profile.jpg",
-//     name: "Amazon",
-//     date: "Just now",
-//     price: "$377.23",
-//   },
-//   {
-//     src: "/amazon.png",
-//     name: "Amazon",
-//     date: "Just now",
-//     price: "$377.23",
-//   },
-// ];
+const activities = [
+  {
+    id: 1,
+    imageUrl: "/amazon.png",
+    name: "Amazon",
+    date: "Just now",
+    amount: "$377.23",
+  },
+  {
+    id: 2,
+    imageUrl: "/nike.jpg",
+    name: "Nike",
+    date: "Today",
+    amount: "$237,737.55",
+  },
+  {
+    id: 3,
+    imageUrl: "/starbucks.png",
+    name: "Starbucks",
+    date: "Yesterday",
+    amount: "$873,873,834.3",
+  },
+  {
+    id: 4,
+    imageUrl: "/netflix.png",
+    name: "Netflix",
+    date: "June 17",
+    amount: "$599",
+  },
+  {
+    id: 5,
+    imageUrl: "/apples1.png",
+    name: "Apple",
+    date: "June 15",
+    amount: "$875",
+  },
+  {
+    id: 6,
+    imageUrl: "/starbucks.png",
+    name: "Starbucks",
+    date: "June 13",
+    amount: "$244.55",
+  },
+  {
+    id: 7,
+    imageUrl: "/nike.jpg",
+    name: "Nike",
+    date: "June 11",
+    amount: "$452",
+  },
+  {
+    id: 8,
+    imageUrl: "/apples.png",
+    name: "Apple",
+    date: "June 09",
+    amount: "$990",
+  },
+];
 
 function Widget() {
   return (
     <div className="bg-gray-100">
-      <div className="flex justify-end p-6 mb-10 ">
-        <BellIcon className="h-6" />
-        <div className="bottom-2 left-7 bg-red-400 h-2 w-2 rounded-full" />
-        <Avatar />
-        <DotsVerticalIcon className="h-6" />
-      </div>
-      <div className="bg-white m-3 rounded-md p-3 flex">
-        <p className="pr-4 bold text-green-800">Recent Activity</p>
-        <div className="flex bg-gray-100 px-3 py-1 rounded-xl">
-            <CalendarIcon className="h-6 w-6 p-1 text-green-700"/>
-            <p>Start date: 01/02/21</p>
+      <WidgetHeader/>
+      <div className="bg-white m-5 rounded-md p-4">
+        <ActivityHeading />
+        <div className="pt-5">
+          {activities?.map(({ id, imageUrl, name, date, amount }) => (
+            <Activity
+              key={id}
+              imageUrl={imageUrl}
+              name={name}
+              date={date}
+              amount={amount}
+            />
+          ))}
         </div>
-        <SaveIcon className="h-6 w-6 ml-4 text-gray-500"/>
       </div>
     </div>
   );

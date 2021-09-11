@@ -11,24 +11,29 @@ import SidebarRow from "./SidebarRow";
 
 function Sidebar() {
   return (
-    <div className="h-screen mt-5 p-5 border-r">
-      <div>
-        <img
-          src="/patricia-logo.png"
-          className="h-5 mt-2 ml-5 mb-10 cursor-pointer"
-          alt="logo"
-        />
-      </div>
-      <div className="flex-row justify-between h-screen">
-        <div clasName="p-2 mt-5 max-w-[600px] xl:min-w-[300px]">
+    <div className="flex-row h-full justify-between my-5 px-5 border-r">
+      <img
+        src="/patricia-logo.png"
+        className="h-6 ml-6 mt-4 mb-16 cursor-pointer"
+        alt="logo"
+      />
+
+      <div className="ml-5">
+        <div>
           <SidebarRow Icon={ViewGridIcon} title="Dashboard" />
+          
+          <div class="bg-white rounded-md   relative inline-block">
           <SidebarRow Icon={PresentationChartLineIcon} title="Activity" />
+          <span class="absolute top-5 left-7 inline-block w-2 h-2 bg-gray-600 border-2 border-white rounded-full"></span>
+        </div>
           <SidebarRow Icon={CreditCardIcon} title="Wallet" />
           <SidebarRow Icon={CubeIcon} title="Products" />
           <SidebarRow Icon={GiftIcon} title="Referrals" />
         </div>
-        <div className="">
-          <SidebarRow Icon={QuestionMarkCircleIcon} title="Help Center" />
+        <div className="flex items-center p-3 mt-48 h-4 cursor-pointer hover:bg-gray-400 rounded-md hover:text-gray-100">
+        <QuestionMarkCircleIcon className="text-gray-500 hover:text-gray-100 h-4 p"/>
+        <p className="text-sm pl-2 text-gray-500">Help Centre</p>
+         
         </div>
       </div>
     </div>

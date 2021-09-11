@@ -5,20 +5,11 @@ import Widget from "./components/Widget";
 
 function App() {
   return (
-    <div className="flex justify-center">
-     
-      <div className="">
-        <Sidebar/>
-        {/* sidebar */}
-      </div>
-      <div className="border-d">
-        {/* main section */}
+    <div className="flex md:flex-row justify-center">
+        <Sidebar />
         <MainSection/>
-      </div>
-      <div>
-        {/* left setion */}
         <Widget/>
-      </div>
+     
     </div>
   );
 }
