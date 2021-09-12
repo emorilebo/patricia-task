@@ -19,7 +19,7 @@ function MainSection() {
               <p className="text-gray-400">Lorem Ipsum dolar sit amet</p>
           </div>
           
-          <button className=" hidden lg:inline-flex text-black-700 mr-8  bg-yellow-400 hover:bg-yellow-500 px-6 py-2 rounded-xl">
+          <button className="md:inline-flex text-black-700 mr-8  bg-yellow-400 hover:bg-yellow-500 px-6 py-2 rounded-xl">
             Create New Card
           </button>
         </div>
@@ -32,7 +32,7 @@ function MainSection() {
         />
         <img
           src="/blur.png"
-          className="hidden lg:inline-block xl:inline-flex mt-1 p-3 pl-5 ml-4 mb-10 cursor-pointer"
+          className="lg:flex-row xl:inline-flex mt-1 p-3 pl-5 ml-4 mb-10 cursor-pointer"
           alt="blur card"
         />
       </div>
