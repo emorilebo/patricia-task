@@ -15,7 +15,7 @@ function CardDetails({
         <p className="cardDetailHolder mr-12">Card Balance:</p>
         <h3 className="cardDetailValue text-green-900">{cardBalance}</h3>
         </div>
-        <button className="hidden lg:inline-flex text-sm text-green-900 bg-white border-2 border-green-900 hover:border-4 hover:bg-green-900 hover:text-white px-6 py-2 rounded-lg">
+        <button className="text-xs lg:inline-flex lg:text-sm text-green-900 bg-white border-2 border-green-900 hover:border-4 hover:bg-green-900 hover:text-white px-6 py-2 rounded-lg">
           Fund Card
         </button>
       </div>

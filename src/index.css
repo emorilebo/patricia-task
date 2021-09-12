@@ -12,7 +12,7 @@
     }
 
     .cardDetailHolder{
-        @apply hidden md:inline-flex leading-10 text-sm text-gray-400
+        @apply md:inline-flex leading-10 text-sm text-gray-400
     }
 
     .cardDetailValue{

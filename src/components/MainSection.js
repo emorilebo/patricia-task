@@ -16,10 +16,10 @@ function MainSection() {
               <h1 className="text-xl text-black font-semibold hover:text-green-800">Virtual Card</h1>
               <ArrowCircleDownIcon className="h-4 w-4 mt-2 ml-2 text-gray-400 hover:text-gray-300" />
               </div>
-              <p className="text-gray-400">Lorem Ipsum dolar sit amet</p>
+              <p className="text-xs lg:text-base text-gray-400">Lorem Ipsum dolar sit amet</p>
           </div>
           
-          <button className="md:inline-flex text-black-700 mr-8  bg-yellow-400 hover:bg-yellow-500 px-6 py-2 rounded-xl">
+          <button className="text-sm md:inline-flex text-black-700 mr-8  bg-yellow-400 hover:bg-yellow-500 px-6 py-2 rounded-xl">
             Create New Card
           </button>
         </div>
@@ -27,7 +27,7 @@ function MainSection() {
       <div className="flex">
         <img
           src="/card.png"
-          className="ml-4 mb-10 cursor-pointer"
+          className="ml-4 mb-10 cursor-pointer outline-none"
           alt="atmcard"
         />
         <img
@@ -36,8 +36,7 @@ function MainSection() {
           alt="blur card"
         />
       </div>
-      <div className="-mt-6 hidden lg:inline-flex">
-       
+      <div className="-mt-6 lg:inline-flex">
         <button className="text-green-900 hover:bg-green-700 hover:text-white  mb-6 ml-5 border-green-800 bg-tranparent-400 border-2 px-6 py-2 rounded-xl">
           Freeze Card
         </button>
