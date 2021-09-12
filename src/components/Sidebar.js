@@ -30,7 +30,7 @@ function Sidebar() {
           <SidebarRow Icon={CubeIcon} title="Products" />
           <SidebarRow Icon={GiftIcon} title="Referrals" />
         </div>
-        <div className="hidden md:inline-flex  items-center p-3 mt-64 h-4 cursor-pointer hover:bg-gray-200 rounded-md hover:text-gray-100">
+        <div className="hidden md:flex  items-center p-3 mt-64 h-4 cursor-pointer hover:bg-gray-200 rounded-md hover:text-gray-100">
           <QuestionMarkCircleIcon className="text-gray-500 hover:text-gray-100 h-4 p" />
           <p className="text-sm pl-2 text-gray-500">Help Centre</p>
         </div>

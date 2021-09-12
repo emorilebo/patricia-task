@@ -32,7 +32,7 @@ function MainSection() {
         />
         <img
           src="/blur.png"
-          className="lg:flex-row xl:inline-flex mt-1 p-3 pl-5 ml-4 mb-10 cursor-pointer"
+          className="lg:flex-row xl:flex mt-1 p-3 pl-5 ml-4 mb-10 cursor-pointer"
           alt="blur card"
         />
       </div>
