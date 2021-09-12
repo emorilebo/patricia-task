@@ -32,7 +32,7 @@ function MainSection() {
         />
         <img
           src="/blur.png"
-          className="hidden xl:inline-flex mt-1 p-3 pl-5 ml-4 mb-10 cursor-pointer"
+          className="hidden lg:inline-block xl:inline-flex mt-1 p-3 pl-5 ml-4 mb-10 cursor-pointer"
           alt="blur card"
         />
       </div>
