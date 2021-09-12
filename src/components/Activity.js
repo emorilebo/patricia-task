@@ -9,7 +9,7 @@ function Activity({ imageUrl, name, date, amount }) {
           <p className="text-sm font-medium">{name}</p>
           <p className="text-gray-500 text-sm">{date}</p>
         </div>
-        <p className="flex justify-end text-gray-500 text-sm">{amount}</p>
+        <p className="hidden lg:inline-flex justify-end text-gray-500 text-sm">{amount}</p>
       </div>
       
     </div>

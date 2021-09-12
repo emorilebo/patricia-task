@@ -15,7 +15,7 @@ function CardDetails({
         <p className="cardDetailHolder mr-12">Card Balance:</p>
         <h3 className="cardDetailValue text-green-900">{cardBalance}</h3>
         </div>
-        <button className="text-sm text-green-900 bg-white border-2 border-green-900 hover:border-4 hover:bg-green-900 hover:text-white px-6 py-2 rounded-lg">
+        <button className="hidden lg:inline-flex text-sm text-green-900 bg-white border-2 border-green-900 hover:border-4 hover:bg-green-900 hover:text-white px-6 py-2 rounded-lg">
           Fund Card
         </button>
       </div>
@@ -31,7 +31,7 @@ function CardDetails({
       <div className="flex">
         <p className="cardDetailHolder mr-8">Billing Address:</p>
         <p className="cardDetailValue pl-2">{billingAddress}</p>
-        <DuplicateIcon className="h-5 ml-1 mt-3 text-gray-400 cursor-pointer hover:text-gray-600" />
+        <DuplicateIcon className="hidden lg:inline-flex h-5 ml-1 mt-3 text-gray-400 cursor-pointer hover:text-gray-600" />
       </div>
       <div className="flex">
         <p className="cardDetailHolder mr-8">Date Created:</p>

@@ -5,11 +5,10 @@ import Widget from "./components/Widget";
 
 function App() {
   return (
-    <div className="flex md:flex-row justify-center">
+    <div className="flex  justify-center">
         <Sidebar />
         <MainSection/>
         <Widget/>
-     
     </div>
   );
 }
