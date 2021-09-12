@@ -10,16 +10,16 @@ function MainSection() {
       <div className="flex items-center">
         <PhotographIcon className="h-10 rounded-md text-green-900 m-6 bg-green-100 p-3 cursor-pointer" />
         
-        <div className="flex justify-between w-full items-center cursor-pointer">
+        <div className="flex md:flex-row justify-between w-full items-center cursor-pointer">
           <div>
               <div className="flex align-centre">
-              <h1 className="text-xl text-black font-semibold hover:text-green-800">Virtual Card</h1>
+              <h1 className="text-xl text-black font-semibold hover:text-green-800 md:hidden lg:inline-flex lg:text-base">Virtual Card</h1>
               <ArrowCircleDownIcon className="h-4 w-4 mt-2 ml-2 text-gray-400 hover:text-gray-300" />
               </div>
-              <p className="text-xs lg:text-base text-gray-400">Lorem Ipsum dolar sit amet</p>
+              <p className="text-xs md:hidden lg:inline-flex lg:text-base text-gray-400">Lorem Ipsum dolar sit amet</p>
           </div>
           
-          <button className="text-sm md:inline-flex text-black-700 mr-8  bg-yellow-400 hover:bg-yellow-500 px-6 py-2 rounded-xl">
+          <button className="text-xs md:inline-flex text-black-700 mr-8  bg-yellow-400 hover:bg-yellow-500 px-6 py-2 rounded-xl">
             Create New Card
           </button>
         </div>
@@ -32,7 +32,7 @@ function MainSection() {
         />
         <img
           src="/blur.png"
-          className="lg:flex-row xl:flex mt-1 p-3 pl-5 ml-4 mb-10 cursor-pointer"
+          className="h-32 lg:h-1/2 mt-1 p-3 pl-5 ml-4 mb-10 cursor-pointer"
           alt="blur card"
         />
       </div>
